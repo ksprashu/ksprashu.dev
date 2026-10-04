@@ -1,0 +1,24 @@
+# Hand-edited. Everything on the page that isn't a live feed comes from /data.
+name: Prashanth Subrahmanyam
+handle: ksprashu
+role: APAC Lead, Developer Advocacy
+org: Google Cloud
+location: Bengaluru, India
+thesis: I build agentic AI systems that hold up in production — and help developers do the same.
+intro: >-
+  Most AI work stops at the demo. The hard part — making agents reliable with real data, at scale —
+  is where I spend my time: MCP servers, multi-agent orchestration, context engineering and evals.
+  I lead Developer Advocacy for Google Cloud across India, Southeast Asia, Japan and Greater China,
+  after 20+ years building systems that had to work — at SAP, Apigee and Google Pay.
+  I speak from what I've built, not what I've only read.
+links:
+  - { label: GitHub,   url: "https://github.com/ksprashu",          icon: github }
+  - { label: Medium,   url: "https://ksprashu.medium.com",          icon: medium }
+  - { label: LinkedIn, url: "https://www.linkedin.com/in/ksprashu/", icon: linkedin }
+  - { label: YouTube,  url: "https://www.youtube.com/@ksprashutv",   icon: youtube }
+  - { label: X,        url: "https://x.com/ksprashu",                icon: x }
+youtube:
+  channel_id: UCmpsMcGXH1MA56LXfrmaoRQ
+  talks_playlist: PLH75nbpHhCqH4hmSthkriN8lMWZpKHYtr
+medium_feed: https://ksprashu.medium.com/feed
+github_user: ksprashu

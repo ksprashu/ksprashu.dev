@@ -1,0 +1,81 @@
+{
+  "fetchedAt": "2026-10-04T00:00:00.000Z",
+  "seed": true,
+  "items": [
+    {
+      "title": "Take your AI Harness with you with Antigravity Remote Control",
+      "url": "https://medium.com/google-cloud/take-your-ai-harness-with-you-with-antigravity-remote-control-25b1d1208bab",
+      "date": "2026-09-01T00:00:00.000Z",
+      "tags": [
+        "remote-work",
+        "google-antigravity"
+      ],
+      "image": null
+    },
+    {
+      "title": "Antigravity Teamwork for long-running tasks",
+      "url": "https://medium.com/google-cloud/antigravity-teamwork-for-long-running-tasks-de74825a6ae9",
+      "date": "2026-08-31T00:00:00.000Z",
+      "tags": [
+        "google-antigravity",
+        "long-running-agent",
+        "agent-harness"
+      ],
+      "image": null
+    },
+    {
+      "title": "Drop to Demo: Gemini CLI Subagents",
+      "url": "https://medium.com/google-cloud/drop-to-demo-gemini-cli-subagents-1aea1b2f9578",
+      "date": "2026-04-18T00:00:00.000Z",
+      "tags": [
+        "gemini",
+        "gemini-cli",
+        "gemini-cli-subagents",
+        "sub-agents"
+      ],
+      "image": null
+    },
+    {
+      "title": "Great-looking UIs with Google Stitch and Google Antigravity",
+      "url": "https://medium.com/google-cloud/great-looking-uis-with-google-stitch-and-google-antigravity-88255c97f291",
+      "date": "2026-02-23T00:00:00.000Z",
+      "tags": [],
+      "image": null
+    },
+    {
+      "title": "Practical Gemini CLI: Intelligent Model Router",
+      "url": "https://medium.com/google-cloud/practical-gemini-cli-intelligent-model-router-e01e543ec438",
+      "date": "2025-11-01T00:00:00.000Z",
+      "tags": [],
+      "image": null
+    },
+    {
+      "title": "Advanced Gemini CLI: Part 3\u2014Dynamic Isolated Agents",
+      "url": "https://medium.com/google-cloud/advanced-gemini-cli-part-3-isolated-agents-b9dbab70eeff",
+      "date": "2025-10-18T00:00:00.000Z",
+      "tags": [],
+      "image": null
+    },
+    {
+      "title": "Advanced Gemini CLI: Part 2\u2014 Decoding the Context",
+      "url": "https://medium.com/google-cloud/advanced-gemini-cli-part-2-decoding-the-context-edc9e815b548",
+      "date": "2025-10-10T00:00:00.000Z",
+      "tags": [],
+      "image": null
+    },
+    {
+      "title": "Advanced Gemini CLI: Part 1 \u2014 What\u2019s the Context?",
+      "url": "https://medium.com/google-cloud/advanced-gemini-cli-part-1-whats-the-context-6fd91326979b",
+      "date": "2025-10-10T00:00:00.000Z",
+      "tags": [],
+      "image": null
+    },
+    {
+      "title": "Practical Gemini CLI: A Deep Dive into AI Planning \u2014 Part 1",
+      "url": "https://medium.com/google-cloud/practical-gemini-cli-a-deep-dive-into-ai-planning-2ece2f8ed369",
+      "date": "2025-09-05T00:00:00.000Z",
+      "tags": [],
+      "image": null
+    }
+  ]
+}

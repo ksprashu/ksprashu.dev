@@ -1,0 +1,55 @@
+name: Build & deploy ksprashu.dev
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 1 * * *'   # daily 06:47 IST — pull fresh Medium / GitHub / YouTube content
+  workflow_dispatch: {}     # "Run workflow" button for an instant refresh
+
+permissions:
+  contents: write   # commit refreshed data/feeds snapshots
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Refresh live feeds
+        run: node scripts/fetch-feeds.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit refreshed snapshots (if changed)
+        run: |
+          git config user.name "ksprashu.dev bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/feeds
+          [ -f public/avatar.png ] && git add public/avatar.png || true
+          if git diff --cached --quiet; then echo "No content changes"; else
+            git commit -m "chore: refresh feeds [skip ci]" && git push
+          fi
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,121 @@
+# Hand-edited. Newest first. Fields: date (YYYY or YYYY-MM or YYYY-MM-DD), event, title (optional),
+# place (optional), kind (keynote|talk|workshop|panel|series), video/slides/link (optional URLs).
+# Talks from the YouTube playlist are pulled in automatically — no need to repeat them here.
+- date: 2026-08-04
+  event: Google Builders Night · GDG Singapore
+  title: Building Next-Gen AI Agents
+  place: Singapore
+  kind: talk
+  link: https://gdg.community.dev/events/details/google-gdg-singapore-presents-google-builders-night-building-next-gen-ai-agents/
+- date: 2026-06
+  event: MCP Dev Summit Bengaluru
+  place: Bengaluru
+  kind: talk
+  link: https://mcpbengaluru26.sched.com/speaker/ksprashanth
+- date: 2026-05-26
+  event: Build with AI 2026 · Google Cloud Developer Night
+  title: "AI Kopitiam: Building Graph-Based Agents with ADK"
+  place: Hong Kong
+  kind: talk
+  link: https://gdg.community.dev/events/details/google-gdg-cloud-hong-kong-presents-build-with-ai-2026-google-cloud-developer-night/
+- date: 2026-02
+  event: India AI Impact Summit
+  place: Bharat Mandapam, New Delhi
+  kind: keynote
+- date: 2026
+  event: Builders Day — 10 APAC cities
+  title: Hands-on developer days I conceived and lead
+  kind: series
+- date: 2025-06-02
+  event: Google Cloud Hong Kong Developer Night
+  title: Build with and for Developers
+  place: Hong Kong
+  kind: keynote
+  link: https://gdg.community.dev/events/details/google-gdg-cloud-hong-kong-presents-google-cloud-hong-kong-developer-night-2025/
+- date: 2025
+  event: Databricks Data + AI Summit
+  kind: talk
+  link: https://www.databricks.com/dataaisummit/speaker/prashanth-subrahmanyam
+- date: 2024-10-06
+  event: Google Cloud Community Day Jaipur
+  title: Prototype to Production with GenAI on Google Cloud
+  place: Jaipur
+  kind: keynote
+  link: https://gdg.community.dev/events/details/google-gdg-cloud-jaipur-presents-google-cloud-community-day-2024-jaipur-edition
+- date: 2024-09-14
+  event: Days of Cloud · GDG Cloud Bengaluru
+  title: "GenAI on Google Cloud: Prototype to Production"
+  place: Bengaluru
+  kind: talk
+  link: https://gdg.community.dev/events/details/google-gdg-cloud-bengaluru-presents-days-of-cloud-series-1
+- date: 2024-08-17
+  event: Google Cloud Community Day Kolkata
+  title: "GenAI on Google Cloud: Prototype to Production"
+  place: Kolkata
+  kind: talk
+  link: https://ccd2024.gdgcloudkol.org/schedule
+- date: 2024-04-24
+  event: Great International Developer Summit 2024
+  title: Discover and Deploy Open and Third-Party Models on Vertex AI
+  place: Bengaluru
+  kind: talk
+  link: https://saltmarch.com/speaker/prashanth-subrahmanyam
+- date: 2024
+  event: Gemini Code Assist global roadshow — 33 cities
+  title: Content owner and keynote speaker
+  kind: series
+- date: 2023-04-26
+  event: Great International Developer Summit 2023
+  title: Future with Large Language Models
+  place: Bengaluru
+  kind: talk
+  video: https://saltmarch.com/watch/future-with-large-language-models
+- date: 2022-09-30
+  event: Open Source India 2022
+  title: Open Source, Open Data, and Open Cloud
+  place: Bengaluru
+  kind: keynote
+  video: https://www.youtube.com/watch?v=tRipwxPO508
+- date: 2022
+  event: Google Cloud Next '22
+  title: Build Event-driven Apps (BLD201)
+  kind: talk
+  link: https://cloud.withgoogle.com/next/22/catalog?session=BLD201
+- date: 2019
+  event: Google Cloud Summit
+  title: Innovate & Accelerate Time-to-Market with APIs
+  kind: talk
+  video: https://www.youtube.com/watch?v=uA-TPjUCdWU
+- date: 2018
+  event: Google Cloud Summit
+  title: Using APIs to Deliver Connected Experiences
+  kind: talk
+  video: https://www.youtube.com/watch?v=Z-frYL2GYeg&t=108s
+- date: 2018
+  event: CIO Next 100
+  title: Digital Transformation Workshop
+  kind: workshop
+  video: https://www.youtube.com/watch?v=Nav57uId-kQ
+- date: 2018
+  event: Google Cloud Summit · ISV Days
+  title: Leveraging API Ecosystems
+  kind: talk
+- date: 2017
+  event: Google Cloud Summit Bangalore
+  title: Create and Publish Great APIs
+  place: Bengaluru
+  kind: talk
+- date: 2017
+  event: Google Partner Day Bangalore
+  title: API Management and Microservices
+  place: Bengaluru
+  kind: talk
+- date: 2016
+  event: Cloud Foundry Summit Europe
+  title: Co-speaker
+  kind: talk
+  video: https://www.youtube.com/watch?v=40y8dMwaYyE&t=382s
+- date: 2013
+  event: Barcamp Bangalore
+  place: Bengaluru
+  kind: talk

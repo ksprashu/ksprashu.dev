@@ -1,0 +1,30 @@
+# Hand-edited. Source of truth: LinkedIn. Newest first.
+- org: Google Cloud
+  role: APAC Lead, Developer Advocacy
+  period: 2021 — now
+  points:
+    - First Developer Advocate hired for India; grew the team across Southeast Asia, Japan and Greater China.
+    - Builds in public — MCP servers, agent skills, codelabs — and writes a practitioner series on agentic AI.
+    - Conceived Builders Day (10 APAC cities, 2026); led the global Gemini Code Assist roadshow (33 cities, 2024).
+    - Co-builds production AI systems with enterprise engineering teams, from use case to working demo.
+- org: Google Pay
+  role: Partner Engineer · UPI Reliability Lead
+  period: 2019 — 2021
+  points:
+    - Technical liaison to NPCI and four partner banks; drove UPI transaction resolution from 88% to 98.5%.
+    - Built monitoring, debugging tooling and an automated file-transfer service that cut resolution times.
+    - Defined APIs and integrated partners for Google Pay's Instant Loans and Credit Cards.
+- org: Apigee · Google Cloud
+  role: Principal Architect → Tech Lead / Manager → Solutions Architect
+  period: 2015 — 2019
+  points:
+    - Joined Apigee pre-acquisition; designed and built the OpenBank API Solution for PSD2.
+    - Led API solution teams across retail, health (FHIR), identity and GSMA Mobile Connect; built Apigee Voice Kits.
+    - Advised banks, telcos and enterprises across APAC on API programs, cloud and Kubernetes/Anthos.
+- org: SAP Labs India · SAP BusinessObjects · TCS
+  role: Developer → Associate Architect
+  period: 2004 — 2015
+  points:
+    - The only Indian architect on SAP's India–Germany Architecture Council; moved teams from client-server ABAP to Node.js and AngularJS.
+    - Founded an engineering learning forum that grew org-wide and outlasted my tenure. Trainer of the Year.
+    - Built the ABAP New Package Builder (SE21) and integration frameworks across SAP PLM.

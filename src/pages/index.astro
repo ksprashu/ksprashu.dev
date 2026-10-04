@@ -1,0 +1,216 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { profile, now, posts, github, talks, talkVideos, journey, impact, hasHeadshot, hasAvatar, fmtDate } from '../lib/data';
+
+const photo = hasHeadshot ? '/headshot.jpg' : hasAvatar ? '/avatar.png' : null;
+const latestPosts = posts.slice(0, 6);
+const videos = talkVideos.slice(0, 6);
+
+const byYear = new Map<string, typeof talks>();
+for (const t of talks) {
+  const y = t.date.slice(0, 4);
+  byYear.set(y, [...(byYear.get(y) ?? []), t]);
+}
+const allYears = [...byYear.entries()].sort((a, b) => b[0].localeCompare(a[0]));
+const years = allYears.filter(([y]) => Number(y) >= 2022);
+const earlier = allYears.filter(([y]) => Number(y) < 2022);
+const eventCount = talks.length;
+const description = `${profile.name} — ${profile.role}, ${profile.org}. ${profile.thesis}`;
+const thesis = profile.thesis.replace('in production', '<em>in production</em>');
+const updated = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Kolkata' });
+---
+<Base title={`${profile.name} · ${profile.handle}`} description={description}>
+  <nav class="nav" aria-label="Primary">
+    <div class="wrap">
+      <a class="brand" href="/">ksprashu<span>.dev</span></a>
+      <ul>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#building">Building</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#journey">Journey</a></li>
+      </ul>
+      <button class="theme" type="button" aria-label="Toggle dark mode">
+        <span class="sun"><Icon name="sun" size={16} /></span>
+        <span class="moon"><Icon name="moon" size={16} /></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">// hi, I'm {profile.handle}</p>
+          <h1>{profile.name}</h1>
+          <p class="thesis" set:html={thesis} />
+          <p class="role"><b>{profile.role}</b> · {profile.org} · {profile.location}</p>
+          <p class="intro">{profile.intro}</p>
+          <div class="links">
+            {profile.links.map((l) => (
+              <a class="pill" href={l.url} rel="me noopener" target="_blank"><Icon name={l.icon} size={16} /> {l.label}</a>
+            ))}
+          </div>
+        </div>
+        {photo && <img class="photo" src={photo} alt={`Portrait of ${profile.name}`} width="188" height="188" />}
+      </div>
+    </header>
+
+    <section class="block" id="now" aria-labelledby="now-h">
+      <div class="wrap">
+        <div class="head"><h2 id="now-h"><small>// now</small>What I'm building and exploring</h2></div>
+        <div class="now" set:html={now} />
+      </div>
+    </section>
+
+    {latestPosts.length > 0 && (
+      <section class="block" id="writing" aria-labelledby="writing-h">
+        <div class="wrap">
+          <div class="head">
+            <h2 id="writing-h"><small>// writing</small>Latest from Medium</h2>
+            <a class="more" href="https://ksprashu.medium.com" target="_blank" rel="noopener">All posts <Icon name="arrow" size={14} /></a>
+          </div>
+          <ol class="posts">
+            {latestPosts.map((p) => (
+              <li class="post">
+                <time datetime={p.date}>{fmtDate(p.date, { day: 'numeric', month: 'short', year: 'numeric' })}</time>
+                <div>
+                  <a class="t" href={p.url} target="_blank" rel="noopener">{p.title}</a>
+                  {p.excerpt && <p>{p.excerpt}</p>}
+                  {p.tags?.length > 0 && <div class="tags">{p.tags.slice(0, 4).map((t) => <span class="tag">{t}</span>)}</div>}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+    )}
+
+    {github.items.length > 0 && (
+      <section class="block" id="building" aria-labelledby="building-h">
+        <div class="wrap">
+          <div class="head">
+            <h2 id="building-h"><small>// building</small>Open source</h2>
+            <a class="more" href="https://github.com/ksprashu?tab=repositories" target="_blank" rel="noopener">
+              All repos <Icon name="arrow" size={14} />
+            </a>
+          </div>
+          <div class="grid">
+            {github.items.map((r) => (
+              <a class="card" href={r.url} target="_blank" rel="noopener">
+                <h3>{r.name}</h3>
+                <p>{r.description}</p>
+                <div class="meta">
+                  {r.language && <span>{r.language}</span>}
+                  {r.stars > 0 && <span><Icon name="star" size={12} /> {r.stars}</span>}
+                </div>
+              </a>
+            ))}
+          </div>
+          {github.recent.length > 0 && (
+            <>
+              <p class="subhead">// recently started</p>
+              <ul class="compact">
+                {github.recent.map((r) => (
+                  <li><a href={r.url} target="_blank" rel="noopener">{r.name}</a> <span>— {r.description}</span></li>
+                ))}
+              </ul>
+            </>
+          )}
+        </div>
+      </section>
+    )}
+
+    <section class="block" id="speaking" aria-labelledby="speaking-h">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="speaking-h"><small>// speaking</small>Talks &amp; keynotes</h2>
+          <a class="more" href="https://www.youtube.com/playlist?list=PLH75nbpHhCqH4hmSthkriN8lMWZpKHYtr" target="_blank" rel="noopener">Watch the playlist <Icon name="arrow" size={14} /></a>
+        </div>
+        {videos.length > 0 && (
+          <div class="videos">
+            {videos.map((v) => (
+              <a class="video" href={v.url} target="_blank" rel="noopener">
+                <div class="thumb">
+                  <img src={v.thumb} alt="" loading="lazy" width="480" height="270" />
+                  <span class="play"><Icon name="play" size={14} /></span>
+                </div>
+                <h3>{v.title}</h3>
+              </a>
+            ))}
+          </div>
+        )}
+        {[years, earlier].map((group, gi) => {
+          const list = (
+            <div class="years">
+              {group.map(([year, items]) => (
+                <div class="year">
+                  <h3>{year}</h3>
+                  <div>
+                    {items.map((t) => (
+                      <div class="talk">
+                        <div><span class="ev">{t.event}</span>{t.title && <span class="ti"> — {t.title}</span>}</div>
+                        <div class="sub">
+                          {t.kind && t.kind !== 'talk' && <span class="badge">{t.kind}</span>}
+                          {t.date.length > 4 && <span>{fmtDate(t.date)}</span>}
+                          {t.place && <span>{t.place}</span>}
+                          {t.video && <a href={t.video} target="_blank" rel="noopener">▶ Watch</a>}
+                          {t.slides && <a href={t.slides} target="_blank" rel="noopener">Slides</a>}
+                          {t.link && !t.video && <a href={t.link} target="_blank" rel="noopener">Event</a>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          );
+          return gi === 0 ? list : group.length > 0 && (
+            <details class="earlier"><summary>Earlier talks · {group.at(-1)[0]}–{group[0][0]}</summary>{list}</details>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="block" id="journey" aria-labelledby="journey-h">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="journey-h"><small>// journey</small>20+ years of building systems that have to work</h2>
+          <a class="more" href="https://www.linkedin.com/in/ksprashu/" target="_blank" rel="noopener">LinkedIn <Icon name="arrow" size={14} /></a>
+        </div>
+        <ol class="timeline">
+          {journey.map((j) => (
+            <li class="stop">
+              <h3>{j.org}</h3>
+              <div class="r">{j.role}</div>
+              <div class="p">{j.period}</div>
+              <ul>{j.points.map((p) => <li>{p}</li>)}</ul>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <section class="block" id="impact" aria-labelledby="impact-h">
+      <div class="wrap">
+        <div class="head"><h2 id="impact-h"><small>// beyond work</small>Tech for people</h2></div>
+        <div class="impact">
+          {impact.map((i) => (
+            <div class="card"><h3>{i.title}</h3><p>{i.text}</p></div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="links">
+        {profile.links.map((l) => (
+          <a class="pill" href={l.url} rel="me noopener" target="_blank" aria-label={l.label}><Icon name={l.icon} size={15} /></a>
+        ))}
+      </div>
+      <div class="mono">Static site · refreshed daily · last built {updated}</div>
+    </div>
+  </footer>
+</Base>

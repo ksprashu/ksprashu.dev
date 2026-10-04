@@ -1,0 +1,139 @@
+{
+  "fetchedAt": "2026-10-04T08:22:51.589Z",
+  "publicRepos": 120,
+  "items": [
+    {
+      "name": "gemini-cli-config",
+      "url": "https://github.com/ksprashu/gemini-cli-config",
+      "description": "My custom Gemini CLI config",
+      "stars": 22,
+      "language": "C++",
+      "created": "2025-08-11T08:02:31Z",
+      "pushed": "2026-10-03T16:55:01Z",
+      "topics": []
+    },
+    {
+      "name": "agent-skill-forge",
+      "url": "https://github.com/ksprashu/agent-skill-forge",
+      "description": "Curated, unified monorepo of high-performance skills for Google Antigravity, Claude Code, Gemini CLI, and agentic AI coding assistants.",
+      "stars": 2,
+      "language": "Python",
+      "created": "2026-08-25T17:46:09Z",
+      "pushed": "2026-10-03T15:13:32Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "claude-code",
+        "developer-tools",
+        "gemini",
+        "gemini-cli",
+        "llm",
+        "prompt-engineering",
+        "skills"
+      ]
+    },
+    {
+      "name": "gemini-cli-mcp-servers",
+      "url": "https://github.com/ksprashu/gemini-cli-mcp-servers",
+      "description": "A bunch of MCP Servers I've created for use with Gemini CLI",
+      "stars": 10,
+      "language": "Python",
+      "created": "2025-10-18T03:08:15Z",
+      "pushed": "2025-11-07T05:23:41Z",
+      "topics": []
+    },
+    {
+      "name": "gemma4-finetuning-cloudrun",
+      "url": "https://github.com/ksprashu/gemma4-finetuning-cloudrun",
+      "description": "Gemma 4 fine-tuning on Cloud Run",
+      "stars": 6,
+      "language": "HTML",
+      "created": "2026-06-28T04:43:16Z",
+      "pushed": "2026-06-29T04:05:58Z",
+      "topics": []
+    },
+    {
+      "name": "step-by-step-adk",
+      "url": "https://github.com/ksprashu/step-by-step-adk",
+      "description": "Step by Step approach to understanding the features of Google ADK",
+      "stars": 3,
+      "language": "Python",
+      "created": "2025-05-26T05:43:50Z",
+      "pushed": "2025-06-18T12:40:37Z",
+      "topics": []
+    },
+    {
+      "name": "anotato",
+      "url": "https://github.com/ksprashu/anotato",
+      "description": "Screenshot annotation and note-taking webapp for developer coding harnesses",
+      "stars": 1,
+      "language": "TypeScript",
+      "created": "2026-08-31T18:36:57Z",
+      "pushed": "2026-10-03T16:25:34Z",
+      "topics": []
+    }
+  ],
+  "recent": [
+    {
+      "name": "checkinn-community",
+      "url": "https://github.com/ksprashu/checkinn-community",
+      "description": "CheckInn Community: Public documentation, user guides, feature requests, and issue tracking",
+      "stars": 0,
+      "language": null,
+      "created": "2026-09-06T09:23:53Z",
+      "pushed": "2026-09-06T09:24:59Z",
+      "topics": []
+    },
+    {
+      "name": "skills-extract-human-voice",
+      "url": "https://github.com/ksprashu/skills-extract-human-voice",
+      "description": "Extract human voice persona based on chat interactions and other sources like gmail, medium etc.",
+      "stars": 1,
+      "language": "HTML",
+      "created": "2026-06-23T12:51:54Z",
+      "pushed": "2026-07-30T08:30:29Z",
+      "topics": []
+    },
+    {
+      "name": "git-commit-work-log",
+      "url": "https://github.com/ksprashu/git-commit-work-log",
+      "description": "Trying to identify how much time I've spent, or work done, from the commit log",
+      "stars": 0,
+      "language": null,
+      "created": "2026-05-11T01:54:17Z",
+      "pushed": "2026-05-11T02:08:04Z",
+      "topics": []
+    },
+    {
+      "name": "skills-image-gen-expert",
+      "url": "https://github.com/ksprashu/skills-image-gen-expert",
+      "description": "Gemini CLI Skills - Image generator",
+      "stars": 0,
+      "language": "Python",
+      "created": "2026-04-04T15:56:50Z",
+      "pushed": "2026-08-07T18:46:43Z",
+      "topics": []
+    },
+    {
+      "name": "capital-quizeroo",
+      "url": "https://github.com/ksprashu/capital-quizeroo",
+      "description": "Simple learning app to remember capital cities for school",
+      "stars": 0,
+      "language": null,
+      "created": "2026-03-24T09:54:40Z",
+      "pushed": "2026-03-24T10:08:17Z",
+      "topics": []
+    },
+    {
+      "name": "whats-new-in-gemini-cli",
+      "url": "https://github.com/ksprashu/whats-new-in-gemini-cli",
+      "description": "App to browser the Gemini CLI changelog for feature releases.",
+      "stars": 1,
+      "language": "HTML",
+      "created": "2026-02-24T07:00:55Z",
+      "pushed": "2026-02-24T07:31:38Z",
+      "topics": []
+    }
+  ]
+}
