@@ -1,3 +1,3 @@
-- **Agent harnesses** — long-running, multi-agent work with Google Antigravity and Gemini CLI, and taking that harness with me everywhere.
-- **Agent skills & MCP** — building reusable skills and MCP servers, collected in [agent-skill-forge](https://github.com/ksprashu/agent-skill-forge) and [gemini-cli-mcp-servers](https://github.com/ksprashu/gemini-cli-mcp-servers).
-- **Builders Day** — a hands-on developer format I conceived, running across 10 APAC cities in 2026.
+- Running long, multi-agent tasks with Google Antigravity and Gemini CLI, and driving them remotely with Antigravity Remote Control.
+- Building reusable agent skills and MCP servers, collected in [agent-skill-forge](https://github.com/ksprashu/agent-skill-forge) and [gemini-cli-mcp-servers](https://github.com/ksprashu/gemini-cli-mcp-servers).
+- Running Builders Day, a hands-on developer format I created, in 10 APAC cities this year.

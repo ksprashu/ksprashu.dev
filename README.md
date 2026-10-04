@@ -1,6 +1,6 @@
 # ksprashu.dev
 
-Personal home of **Prashanth Subrahmanyam** — a static [Astro](https://astro.build) site on GitHub Pages, with DNS on Cloudflare.
+Personal home of **Prashanth Subrahmanyam**: a static [Astro](https://astro.build) site on GitHub Pages, with DNS on Cloudflare.
 No server, no API keys, nothing to patch.
 
 ## How it stays fresh
@@ -14,7 +14,7 @@ A GitHub Actions workflow (`.github/workflows/site.yml`) runs **daily at 06:47 I
 
 ## Editing content
 
-Everything hand-written lives in `/data` — edit on github.com and the site redeploys in ~1 minute.
+Everything hand-written lives in `/data`. Edit on github.com and the site redeploys in ~1 minute.
 
 | File | What it controls |
 |---|---|

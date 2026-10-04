@@ -1,6 +1,6 @@
 # Hand-edited. Newest first. Fields: date (YYYY or YYYY-MM or YYYY-MM-DD), event, title (optional),
 # place (optional), kind (keynote|talk|workshop|panel|series), video/slides/link (optional URLs).
-# Talks from the YouTube playlist are pulled in automatically — no need to repeat them here.
+# Talks from the YouTube playlist are pulled in automatically, so no need to repeat them here.
 - date: 2026-08-04
   event: Google Builders Night · GDG Singapore
   title: Building Next-Gen AI Agents
@@ -23,8 +23,8 @@
   place: Bharat Mandapam, New Delhi
   kind: keynote
 - date: 2026
-  event: Builders Day — 10 APAC cities
-  title: Hands-on developer days I conceived and lead
+  event: Builders Day, 10 APAC cities
+  title: Creator and lead
   kind: series
 - date: 2025-06-02
   event: Google Cloud Hong Kong Developer Night
@@ -61,7 +61,7 @@
   kind: talk
   link: https://saltmarch.com/speaker/prashanth-subrahmanyam
 - date: 2024
-  event: Gemini Code Assist global roadshow — 33 cities
+  event: Gemini Code Assist global roadshow, 33 cities
   title: Content owner and keynote speaker
   kind: series
 - date: 2023-04-26

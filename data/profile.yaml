@@ -4,12 +4,12 @@ handle: ksprashu
 role: APAC Lead, Developer Advocacy
 org: Google Cloud
 location: Bengaluru, India
-thesis: I build agentic AI systems that hold up in production — and help developers do the same.
+thesis: I build agentic AI systems that hold up in production, and help developers do the same.
 intro: >-
-  Most AI work stops at the demo. The hard part — making agents reliable with real data, at scale —
-  is where I spend my time: MCP servers, multi-agent orchestration, context engineering and evals.
-  I lead Developer Advocacy for Google Cloud across India, Southeast Asia, Japan and Greater China,
-  after 20+ years building systems that had to work — at SAP, Apigee and Google Pay.
+  Most AI work stops at the demo. I work on what comes after: agents that stay reliable with real data, at scale.
+  Day to day that means MCP servers, multi-agent orchestration, context engineering and evals.
+  I lead Developer Advocacy for Google Cloud across India, Southeast Asia, Japan and Greater China.
+  Before that I spent 20 years building systems that had to work, at SAP, Apigee and Google Pay.
   I speak from what I've built, not what I've only read.
 links:
   - { label: GitHub,   url: "https://github.com/ksprashu",          icon: github }

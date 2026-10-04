@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '17 1 * * *'   # daily 06:47 IST — pull fresh Medium / GitHub / YouTube content
+    - cron: '17 1 * * *'   # daily 06:47 IST: pull fresh Medium / GitHub / YouTube content
   workflow_dispatch: {}     # "Run workflow" button for an instant refresh
 
 permissions:
@@ -20,8 +20,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
@@ -40,7 +40,7 @@ jobs:
             git commit -m "chore: refresh feeds [skip ci]" && git push
           fi
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
