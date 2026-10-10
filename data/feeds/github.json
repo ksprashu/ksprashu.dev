@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-09T07:22:01.693Z",
+  "fetchedAt": "2026-10-10T07:03:44.404Z",
   "publicRepos": 121,
   "items": [
     {
@@ -16,7 +16,7 @@
       "name": "agent-skill-forge",
       "url": "https://github.com/ksprashu/agent-skill-forge",
       "description": "Curated, unified monorepo of high-performance skills for Google Antigravity, Claude Code, Gemini CLI, and agentic AI coding assistants.",
-      "stars": 2,
+      "stars": 3,
       "language": "Python",
       "created": "2026-08-25T17:46:09Z",
       "pushed": "2026-10-04T15:29:35Z",
